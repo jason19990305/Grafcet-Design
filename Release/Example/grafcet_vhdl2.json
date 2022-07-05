@@ -1,0 +1,69 @@
+[{
+		"StepNumber":0,
+		"StepType":"initial",
+		"StepAction":"null;",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[5],
+		"LinkOutputNumber":[1],
+		"Condition":["true"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":1,
+		"StepType":"normal",
+		"StepAction":"M <= '0' ;V1 <= '0'; V2 <= '0';",
+		"LinkInputType":[],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[0],
+		"LinkOutputNumber":[2],
+		"Condition":["en = '1'"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":2,
+		"StepType":"normal",
+		"StepAction":"V1 <= '1';",
+		"LinkInputType":[],
+		"LinkOutputType":"divergence_or",
+		"LinkInputNumber":[1],
+		"LinkOutputNumber":[3,
+		4],
+		"Condition":["s = '1'",
+		" s = '0'"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":3,
+		"StepType":"normal",
+		"StepAction":"M <= '1';",
+		"LinkInputType":[],
+		"LinkOutputType":"convergence_or",
+		"LinkInputNumber":[2],
+		"LinkOutputNumber":[5],
+		"Condition":["true"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":4,
+		"StepType":"normal",
+		"StepAction":"V2 <= '1';",
+		"LinkInputType":[],
+		"LinkOutputType":"convergence_or",
+		"LinkInputNumber":[2],
+		"LinkOutputNumber":[5],
+		"Condition":["true"],
+		"SubGrafcet":[]}
+	,
+		{
+		"StepNumber":5,
+		"StepType":"normal",
+		"StepAction":"null;",
+		"LinkInputType":["convergence_or"],
+		"LinkOutputType":"track",
+		"LinkInputNumber":[3,
+		4],
+		"LinkOutputNumber":[0],
+		"Condition":["true"],
+		"SubGrafcet":[]}
+	]
