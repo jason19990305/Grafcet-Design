@@ -25,3 +25,4 @@ Grafcet Design 的功能有:
 ![](https://github.com/jason19990305/Grafcet-Design/blob/main/image_help/p11.png)
 ![](https://github.com/jason19990305/Grafcet-Design/blob/main/image_help/p12.png)
 ![](https://github.com/jason19990305/Grafcet-Design/blob/main/image_help/p13.png)
+![](https://github.com/jason19990305/Grafcet-Design/blob/main/image_help/p14.png)
